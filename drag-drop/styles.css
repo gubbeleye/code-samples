@@ -1,0 +1,137 @@
+/******Droppable styles*******/
+
+/*
+Layout the triangle shapes.
+Overlap boxes so the triangle background images line up close.
+*/
+.triangle-shape {
+    width: 154px;
+    height: 140px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+/* Senior white male*/
+.triangle-shape.one {
+    background-image: url(../images/mod03/introspection-select-1.png);
+    right: 326px;
+    top: 155px;
+}
+
+/* Blonde haired adult female*/
+.triangle-shape.two {
+    background-image: url(../images/mod03/introspection-select-2.png);
+    top: 155px;
+    right: 229px;
+}
+
+/* Senior Asian male*/
+.three.triangle-shape {
+    background-image: url(../images/mod03/introspection-select-3.png);
+    top: 157px;
+    right: 133px;
+}
+
+/* Dark-haired adult female */
+.four.triangle-shape {
+    background-image: url(../images/mod03/introspection-select-4.png);
+    top: 307px;
+    right: 326px;
+}
+
+/* Senior white female */
+.five.triangle-shape {
+    background-image: url(../images/mod03/introspection-select-5.png);
+    top: 309px;
+    right: 230px;
+}
+
+/* Adult black male*/
+.six.triangle-shape {
+    background-image: url(../images/mod03/introspection-select-6.png);
+    right: 133px;
+    top: 307px;
+}
+
+
+/*
+Layout drop targets within triangle shapes.
+Drop targets are sized and positioned carefully to maximize target dimensions
+while not overlapping each other or the lines of their parents' neighbors' 
+triangle background images.
+*/
+.triangle-shape > div {
+    position: absolute;
+    top:44px;
+    left:33px;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+
+/*Adjust positioning for upsidedown triangles*/
+.triangle-shape.upsidedown > div {
+    top: 5px;
+}
+
+/*
+Selected/accepted states are attached to drop target parents with jQuery
+*/
+.triangle-shape.selected, .triangle-shape.accepted {
+    background-position: 0 -194px;
+}
+
+.triangle-shape > div.accepted {
+  /*Always ensure cursor is set to default on elements
+  when the user can no longer interact with them.*/
+    cursor: default;
+}
+
+
+/******Draggable styles******/
+
+.drag-me {
+    background: url(../images/mod03/introspection-drag-bg.png) center center no-repeat;
+    height: 50px;
+    width: 120px;
+    text-align: center; 
+    cursor: pointer; 
+    z-index: 5;
+    margin-bottom: 5px;
+}
+
+.drag-me p {
+    padding-top: 9px;
+    line-height: 110%;
+    font-weight: bold;
+}
+
+.drag-me.selected, .drag-me.ui-draggable-dragging {
+    outline: 1px solid #00802e;
+}
+
+.drag-me.over-drop {
+    color: #fff;
+}
+
+/*
+Style the draggable after it is accepted by the droppable
+*/
+.accepted .drag-me {
+    color: #fff;
+    background: none;
+    cursor: default;
+    border: none;
+    margin-bottom: 0;
+}
+
+/*Ensure the draggable is positioned correctly inside the triangle*/
+.triangle-shape .drag-me {
+    position: absolute !important;
+    top: 44px !important;
+    left: -16px !important;
+}
+
+.upsidedown.triangle-shape .drag-me {
+    top: -5px !important;
+}

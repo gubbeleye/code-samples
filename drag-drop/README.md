@@ -15,8 +15,6 @@
 <p><a href="code-samples/drag-drop/markup.html">HTML</a>
 <p><a href="code-samples/drag-drop/styles.css">CSS</a>
 <p><a href="code-samples/drag-drop/scripts.js">JavaScript</a>
-<br>
-<br>
 <h4>Screen captures</h4>
 <p>Drop target placement highlighted</p>
 <img src="https://github.com/gubbeleye/code-samples/blob/master/drag-drop/captures/Capture2.PNG" alt="" />

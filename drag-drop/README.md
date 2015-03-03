@@ -1,6 +1,6 @@
 <h2>Code Sample: Drag and Drop</h2>
 
-<img src="https://github.com/gubbeleye/code-samples/blob/master/drag-drop/Capture.PNG" alt="" />
+<img src="https://github.com/gubbeleye/code-samples/blob/master/drag-drop/captures/Capture.PNG" alt="" />
 
 In this drag and drop, the user is encouraged to quickly match the occupations (draggables) to the faces (droppables) in any order they deem appropriate. Once a match is made, either by dragging/dropping or clicking, the matched components are disabled. After the user matches the last pair, the occupation titles (paragraphs within the draggables) are shuffled.
 
@@ -10,12 +10,12 @@ Shuffling the titles after all draggables had been placed, accomplished by using
 <br>
 <br>
 <p><b>Drop target placement</b></p>
-<img src="https://github.com/gubbeleye/code-samples/blob/master/drag-drop/Capture2.PNG" alt="" />
+<img src="https://github.com/gubbeleye/code-samples/blob/master/drag-drop/captures/Capture2.PNG" alt="" />
 <br>
 <br>
 <p><b>Drag targets accepted</b></p>
-<img src="https://github.com/gubbeleye/code-samples/blob/master/drag-drop/Capture3.PNG" alt="" />
+<img src="https://github.com/gubbeleye/code-samples/blob/master/drag-drop/captures/Capture3.PNG" alt="" />
 <br>
 <br>
 <p><b>Drag target titles shuffled</b></p>
-<img src="https://github.com/gubbeleye/code-samples/blob/master/drag-drop/Capture4.PNG" alt="" />
+<img src="https://github.com/gubbeleye/code-samples/blob/master/drag-drop/captures/Capture4.PNG" alt="" />

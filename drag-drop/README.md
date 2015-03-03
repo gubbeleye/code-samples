@@ -10,6 +10,10 @@
 <li>Create the illusion of triangular drop targets, accomplished through the careful CSS placement of drop targets inside containers with triangular background images.</li>
 <li>Shuffling the titles after all draggables had been placed, accomplished by using a combination of jQuery methods including each(), index(), get(), detach(), and appendTo().</li>
 </ol>
+<p><b>Code:</b></p>
+<p><a href="code-samples/drag-drop/markup.html">HTML</a>
+<p><a href="code-samples/drag-drop/styles.css">CSS</a>
+<p><a href="code-samples/drag-drop/scripts.js">JavaScript</a>
 <br>
 <br>
 <p><b>Drop target placement highlighted</b></p>

@@ -12,9 +12,9 @@
 <li>Shuffling the titles after all draggables had been placed, accomplished by using a combination of jQuery methods including each(), index(), get(), detach(), and appendTo().</li>
 </ol>
 <h4>Code</h4>
-<p><a href="code-samples/drag-drop/markup.html">HTML</a>
-<p><a href="code-samples/drag-drop/styles.css">CSS</a>
-<p><a href="code-samples/drag-drop/scripts.js">JavaScript</a>
+<p><a href="https://github.com/gubbeleye/code-samples/blob/master/drag-drop/markup.html">HTML</a>
+<p><a href="https://github.com/gubbeleye/code-samples/blob/master/drag-drop/styles.css">CSS</a>
+<p><a href="https://github.com/gubbeleye/code-samples/blob/master/drag-drop/scripts.js">JavaScript</a>
 <h4>Screen captures</h4>
 <p>Drop target placement highlighted</p>
 <img src="https://github.com/gubbeleye/code-samples/blob/master/drag-drop/captures/Capture2.PNG" alt="" />

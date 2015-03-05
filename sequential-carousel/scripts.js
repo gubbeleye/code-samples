@@ -1,28 +1,4 @@
-﻿/*
-    This code demonstrates the control of user progress through a carousel-based course.
-    To accomplish this, I used a combination of css classes and jQuery for DOM access and 
-    manipulation, along with the 'slide-changed' and 'reached-last-slide' custom event 
-    listeners from the carousel plug-in.
-
-    Scenario:
-        Control progress of user through course content, allowing them to proceed between sections (carousels)
-        in order based on prior section completion. The progress within sections was also controlled
-        based upon sequential slide progression and completion of required interactions.
-
-        Many slides included animations which needed to be fired upon the change to a slide containing the animation
-        then reset when the removed from view.
-
-        Once the course is completed by a user which scores the page, that user can come back and review the course without
-        restrictions. Therefore, all locking functionality needs to be disabled.
-
-    To handle these needs, the code is structured for 3 different scenarios:
-        1) The page is unscored: lock-out code
-        2) The page is scored: unlock code
-        3) Code that always runs: animation control
-*/
-
-
-//Code run if page scored
+﻿//Code run if page scored
 if (parent.sco.apiConnector.suspendData(scoLocation) == '1') {
     $('.sublime-carousel-next').removeClass('disabled');
     $('.locked-cover').css({ 'display': 'none' });
